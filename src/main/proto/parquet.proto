@@ -1,0 +1,13 @@
+package com.aliyun.oss.connect.kafka.format.parquet;
+
+message TestMessage {
+    optional bool boolean = 1;
+    optional int32 int = 2;
+    optional int64 long = 3;
+    optional float float = 4;
+    optional double double = 5;
+    map<string, string> map1 = 6;
+    map<string, string> map2 = 7;
+    repeated string list1 = 8;
+    repeated string list2 = 9;
+}

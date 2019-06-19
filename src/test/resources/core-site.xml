@@ -1,0 +1,34 @@
+<configuration>
+  <property>
+    <name>fs.oss.endpoint</name>
+    <value>oss-cn-zhangjiakou.aliyuncs.com</value>
+  </property>
+  <property>
+    <name>fs.oss.accessKeyId</name>
+    <value></value>
+  </property>
+  <property>
+    <name>fs.oss.accessKeySecret</name>
+    <value></value>
+  </property>
+  <property>
+    <name>fs.oss.impl</name>
+    <value>org.apache.hadoop.fs.aliyun.oss.AliyunOSSFileSystem</value>
+  </property>
+  <property>
+    <name>fs.oss.connection.secure.enabled</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>fs.oss.connection.maximum</name>
+    <value>2048</value>
+  </property>
+  <property>
+    <name>fs.AbstractFileSystem.oss.impl</name>
+    <value>org.apache.hadoop.fs.aliyun.oss.OSS</value>
+  </property>
+  <property>
+    <name>test.fs.oss.bucket</name>
+    <value></value>
+  </property>
+</configuration>
