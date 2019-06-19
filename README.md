@@ -53,13 +53,13 @@ We can see the diff(bin/kafka-run-class.sh.bak is original file)
 ```
 
 ```diff
-CLASSPATH=$CLASSPATH:$base_dir/config			               <
-# Launch mode							                        # Launch mode
-if [ "x$DAEMON_MODE" = "xtrue" ]; then				            if [ "x$DAEMON_MODE" = "xtrue" ]; then
-  nohup $JAVA $KAFKA_HEAP_OPTS $KAFKA_JVM_PERFORMANCE_OPTS $K	  nohup $JAVA $KAFKA_HEAP_OPTS $KAFKA_JVM_PERFORMANCE_OPTS $K
-else								                            else
-  exec $JAVA $KAFKA_HEAP_OPTS $KAFKA_JVM_PERFORMANCE_OPTS $KA	  exec $JAVA $KAFKA_HEAP_OPTS $KAFKA_JVM_PERFORMANCE_OPTS $KA
-fi								                                fi
+CLASSPATH=$CLASSPATH:$base_dir/config	                      <
+# Launch mode							  # Launch mode
+if [ "x$DAEMON_MODE" = "xtrue" ]; then				  if [ "x$DAEMON_MODE" = "xtrue" ]; then
+  nohup $JAVA $KAFKA_HEAP_OPTS $KAFKA_JVM_PERFORMANCE_OPTS $K	    nohup $JAVA $KAFKA_HEAP_OPTS $KAFKA_JVM_PERFORMANCE_OPTS $K
+else						                  else
+  exec $JAVA $KAFKA_HEAP_OPTS $KAFKA_JVM_PERFORMANCE_OPTS $KA	    exec $JAVA $KAFKA_HEAP_OPTS $KAFKA_JVM_PERFORMANCE_OPTS $KA
+fi							          fi
 
 ```
 
