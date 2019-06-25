@@ -86,11 +86,7 @@ public class JsonRecordWriterProvider implements RecordWriterProvider<OSSSinkCon
 
         @Override
         public void close() {
-          try {
-            writer.close();
-          } catch (IOException e) {
-            throw new ConnectException(e);
-          }
+          commit();
         }
 
         @Override
@@ -98,6 +94,7 @@ public class JsonRecordWriterProvider implements RecordWriterProvider<OSSSinkCon
           try {
             LOG.info("Start to commit file {}", filename);
             writer.flush();
+            writer.close();
             wrappedOSSOut.close();
             LOG.info("File {} committed", filename);
           } catch (IOException e) {

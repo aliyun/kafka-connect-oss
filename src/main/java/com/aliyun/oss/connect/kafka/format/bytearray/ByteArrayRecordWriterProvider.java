@@ -75,6 +75,7 @@ public class ByteArrayRecordWriterProvider implements RecordWriterProvider<OSSSi
 
       @Override
       public void close() {
+        commit();
       }
 
       @Override
